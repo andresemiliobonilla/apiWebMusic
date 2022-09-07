@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musica</title>
+</head>
+<body>
+
+    <div class="app">
+        <div class="contenedor-izquierdo">
+            <ul class="lista-canciones">
+                <li class="cancion">
+                    cancion1
+                </li>
+                <li class="cancion">
+                    cancion2
+                </li>
+            </ul>
+        </div>
+        <div class="contenedor-derecho">
+            <audio controls class="audio"></audio>
+        </div>
+
+        <form action="/canciones" method="POST" class="upload-form" enctype="multipart/form-data">
+            Subir cancion
+            <input type="file" name="cancion"/>
+            <input type="submit" value="subir">
+        </form>
+    </div>
+
+    <script src="/jquery/jquery.js"></script>
+    <script  src="/js/main.js"></script>
+</body>
+</html>
